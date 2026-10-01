@@ -1,0 +1,50 @@
+.layout { display: flex; min-height: 100vh; background: #F4F6FB; }
+
+/* ----- Sidebar ----- */
+.sidebar {
+  width: 260px; flex-shrink: 0;
+  background: linear-gradient(180deg, #1E3A8A 0%, #1E40AF 100%);
+  color: #fff; display: flex; flex-direction: column; padding: 24px 16px;
+}
+.sidebar-logo { display: flex; align-items: center; gap: 12px; padding: 8px; margin-bottom: 28px; }
+.sidebar-logo-badge {
+  width: 40px; height: 40px; background: #fff; color: #1E3A8A; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13px;
+}
+.sidebar-logo-title { font-size: 18px; font-weight: 700; }
+.sidebar-logo-sub { font-size: 10px; letter-spacing: 1px; color: #93C5FD; }
+
+.sidebar-nav { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.sidebar-item {
+  display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px;
+  font-size: 14px; color: #C7D2FE; cursor: pointer; transition: background .15s, color .15s;
+}
+.sidebar-item:hover { background: rgba(255,255,255,0.08); color: #fff; }
+.sidebar-item.active { background: #2563EB; color: #fff; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+
+.sidebar-logout {
+  display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px;
+  margin-top: 12px; font-size: 14px; color: #FCA5A5; cursor: pointer; border-top: 1px solid rgba(255,255,255,0.1);
+}
+.sidebar-logout:hover { color: #FECACA; }
+
+/* ----- Main ----- */
+.main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+
+.topbar {
+  display: flex; align-items: center; gap: 24px;
+  background: #fff; padding: 14px 28px; border-bottom: 1px solid #E5E7EB;
+}
+.topbar-title { font-size: 20px; font-weight: 700; color: #2563EB; }
+.topbar-search {
+  flex: 1; max-width: 480px; display: flex; align-items: center; gap: 8px;
+  background: #F3F4F6; border-radius: 10px; padding: 10px 14px; color: #9CA3AF;
+}
+.topbar-search input { border: none; background: transparent; outline: none; flex: 1; font-size: 14px; color: #1F2937; }
+.topbar-right { margin-left: auto; display: flex; align-items: center; gap: 20px; }
+.topbar-icon { color: #6B7280; cursor: pointer; }
+.topbar-user { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.2; }
+.topbar-user-name { font-size: 14px; font-weight: 600; color: #1F2937; }
+.topbar-user-role { font-size: 12px; color: #6B7280; }
+
+.content { flex: 1; padding: 16px 28px 28px; overflow-y: auto; }

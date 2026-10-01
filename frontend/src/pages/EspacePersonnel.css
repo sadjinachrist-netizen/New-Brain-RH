@@ -1,0 +1,38 @@
+.esp-page { min-height: 100vh; background: #F3F4F6; }
+.esp-topbar { display: flex; align-items: center; justify-content: space-between; padding: 16px 32px; background: #fff; border-bottom: 1px solid #E5E7EB; position: sticky; top: 0; z-index: 10; }
+.esp-logo { font-weight: 800; color: #2563EB; font-size: 18px; }
+.esp-logo span { color: #9CA3AF; font-weight: 600; }
+.esp-user { display: flex; align-items: center; gap: 16px; }
+.esp-user > span { font-size: 14px; font-weight: 600; color: #374151; }
+.esp-logout { display: inline-flex; align-items: center; gap: 6px; background: #fff; border: 1px solid #E5E7EB; border-radius: 10px; padding: 8px 14px; font-size: 13px; color: #374151; cursor: pointer; }
+.esp-logout:hover { border-color: #DC2626; color: #DC2626; }
+.esp-main { max-width: 1000px; margin: 0 auto; padding: 32px 20px; }
+.esp-main h1 { font-size: 24px; font-weight: 800; color: #1F2937; }
+.esp-sub { color: #6B7280; font-size: 14px; margin-top: 4px; margin-bottom: 24px; }
+.esp-erreur { background: #FEE2E2; color: #DC2626; padding: 12px; border-radius: 10px; }
+.esp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.esp-carte { background: #fff; border: 1px solid #EEF2F7; border-radius: 16px; padding: 22px; }
+.esp-carte-full { grid-column: 1 / -1; }
+.esp-carte h3 { display: flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 700; color: #1F2937; margin-bottom: 14px; }
+.esp-ligne { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #374151; padding: 6px 0; }
+.esp-ligne svg { color: #2563EB; flex-shrink: 0; }
+.esp-matricule { font-size: 13px; color: #6B7280; }
+.esp-docs { display: flex; flex-direction: column; gap: 8px; }
+.esp-doc { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: #2563EB; text-decoration: none; background: #F9FAFB; border: 1px solid #EEF2F7; border-radius: 10px; padding: 10px 12px; }
+.esp-doc:hover { background: #EFF6FF; }
+.esp-vide { font-size: 13px; color: #9CA3AF; font-style: italic; }
+@media (max-width: 800px) { .esp-grid { grid-template-columns: 1fr; } }
+
+
+.esp-carte-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.esp-carte-head h3 { margin-bottom: 0; }
+.esp-add { display: inline-flex; align-items: center; gap: 5px; background: #EFF6FF; color: #2563EB; border: 1px solid #DBEAFE; border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.esp-demandes { display: flex; flex-direction: column; gap: 10px; }
+.esp-demande { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; background: #F9FAFB; border: 1px solid #EEF2F7; border-radius: 10px; padding: 12px 14px; }
+.esp-demande-titre { font-size: 14px; font-weight: 600; color: #1F2937; }
+.esp-demande-motif { font-size: 13px; color: #6B7280; font-style: italic; margin-top: 4px; }
+.esp-demande-refus { font-size: 12px; color: #DC2626; margin-top: 4px; }
+.esp-badge { padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.esp-badge.att { background: #FEF3C7; color: #D97706; }
+.esp-badge.val { background: #DCFCE7; color: #16A34A; }
+.esp-badge.ref { background: #FEE2E2; color: #DC2626; }

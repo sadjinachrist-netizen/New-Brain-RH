@@ -1,0 +1,33 @@
+.retour { display: inline-flex; align-items: center; gap: 6px; color: #2563EB; background: none; border: none; padding: 0; cursor: pointer; font-size: 14px; margin-bottom: 16px; }
+.retour:hover { text-decoration: underline; }
+
+.det-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-bottom: 24px; flex-wrap: wrap; }
+.det-titre-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.det-titre-row h1 { font-size: 24px; color: #1F2937; }
+.det-statut { padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.det-statut.ouvert { background: #DCFCE7; color: #16A34A; }
+.det-statut.ferme { background: #E5E7EB; color: #6B7280; }
+.det-meta { display: flex; gap: 18px; margin-top: 10px; font-size: 13px; color: #6B7280; flex-wrap: wrap; }
+.det-meta span { display: inline-flex; align-items: center; gap: 5px; }
+.det-actions { display: flex; gap: 10px; }
+.det-btn-sec { display: inline-flex; align-items: center; gap: 6px; border: 1px solid #E5E7EB; background: #fff; color: #374151; border-radius: 10px; padding: 10px 16px; font-size: 14px; cursor: pointer; }
+.det-btn-sec:hover { background: #F9FAFB; }
+.det-btn-pri { display: inline-flex; align-items: center; gap: 6px; border: none; background: #2563EB; color: #fff; border-radius: 10px; padding: 10px 18px; font-size: 14px; font-weight: 600; cursor: pointer; }
+.det-btn-pri:hover { background: #1D4ED8; }
+
+.det-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; align-items: start; }
+.det-grid > * { min-width: 0; }
+.det-side { display: flex; flex-direction: column; gap: 20px; }
+.det-carte { background: #fff; border-radius: 14px; padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+.det-carte h3 { display: flex; align-items: center; gap: 8px; font-size: 16px; color: #1F2937; margin-bottom: 14px; }
+.det-desc { color: #374151; line-height: 1.7; font-size: 15px; white-space: pre-line; overflow-wrap: anywhere; }
+.det-desc a { word-break: break-word; }
+.det-liste { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.det-liste li { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 14px; color: #374151; padding: 10px 12px; background: #F9FAFB; border-radius: 8px; }
+.det-oblig { font-size: 11px; color: #DC2626; font-weight: 600; }
+.det-opt { font-size: 11px; color: #9CA3AF; }
+.det-bareme { font-size: 12px; color: #9CA3AF; }
+.det-prive { font-size: 11px; color: #F59E0B; font-weight: 600; background: #FEF3C7; padding: 2px 8px; border-radius: 10px; }
+.det-vide { color: #9CA3AF; font-size: 13px; font-style: italic; }
+
+@media (max-width: 900px) { .det-grid { grid-template-columns: 1fr; } }

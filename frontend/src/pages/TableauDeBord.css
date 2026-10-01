@@ -1,0 +1,27 @@
+.tdb-title { font-size: 28px; font-weight: 700; color: #1F2937; }
+.tdb-subtitle { font-size: 14px; color: #6B7280; margin: 4px 0 22px; }
+.tdb-kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 22px; }
+.tdb-kpi { background: #fff; border-radius: 14px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.06); display: flex; align-items: center; gap: 16px; }
+.tdb-kpi-icone { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.tdb-kpi-valeur { font-size: 26px; font-weight: 700; color: #1F2937; }
+.tdb-kpi-label { font-size: 13px; color: #374151; font-weight: 600; }
+.tdb-kpi-sous { font-size: 12px; color: #9CA3AF; }
+.tdb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.tdb-carte { background: #fff; border-radius: 14px; padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+.tdb-carte h3 { font-size: 16px; color: #1F2937; margin-bottom: 16px; }
+.tdb-barres { display: flex; flex-direction: column; gap: 12px; }
+.tdb-barre-ligne { display: flex; align-items: center; gap: 12px; }
+.tdb-barre-label { width: 130px; font-size: 13px; color: #374151; }
+.tdb-barre-track { flex: 1; height: 10px; background: #F1F3F9; border-radius: 6px; overflow: hidden; }
+.tdb-barre-fill { height: 100%; border-radius: 6px; transition: width .3s; }
+.tdb-barre-nb { width: 30px; text-align: right; font-size: 14px; font-weight: 600; color: #1F2937; }
+.tdb-offres { display: flex; flex-direction: column; gap: 10px; }
+.tdb-offre { padding: 12px 14px; background: #F9FAFB; border: 1px solid #EEF2F7; border-radius: 10px; cursor: pointer; }
+.tdb-offre:hover { background: #F1F5FF; }
+.tdb-offre-nom { font-size: 14px; font-weight: 600; color: #1F2937; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tdb-offre-meta { display: flex; align-items: center; gap: 12px; margin-top: 6px; font-size: 12px; color: #6B7280; }
+.offre-statut-mini { padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.offre-statut-mini.ouvert { background: #DCFCE7; color: #16A34A; }
+.offre-statut-mini.ferme { background: #E5E7EB; color: #6B7280; }
+.tdb-vide { color: #9CA3AF; font-size: 13px; font-style: italic; }
+@media (max-width: 1000px) { .tdb-kpis { grid-template-columns: repeat(2, 1fr); } .tdb-grid { grid-template-columns: 1fr; } }

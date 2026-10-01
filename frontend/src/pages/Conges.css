@@ -1,0 +1,26 @@
+.ca-title { font-size: 28px; font-weight: 700; color: #1F2937; }
+.ca-subtitle { font-size: 14px; color: #6B7280; margin: 4px 0 18px; }
+.ca-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 18px; }
+.ca-stat { background: #fff; border-radius: 14px; padding: 16px 18px; box-shadow: 0 1px 3px rgba(0,0,0,.05); display: flex; align-items: center; gap: 12px; }
+.ca-pastille { width: 10px; height: 10px; border-radius: 50%; }
+.ca-pastille.attente { background: #D97706; } .ca-pastille.validee { background: #16A34A; } .ca-pastille.refusee { background: #DC2626; }
+.ca-stat-label { font-size: 11px; letter-spacing: .5px; color: #6B7280; font-weight: 600; }
+.ca-stat-nb { font-size: 24px; font-weight: 700; color: #1F2937; }
+.ca-filtres { margin-bottom: 14px; }
+.ca-filtres select { border: 1px solid #E5E7EB; border-radius: 10px; padding: 9px 14px; font-size: 14px; color: #374151; background: #fff; cursor: pointer; }
+.ca-liste { display: flex; flex-direction: column; gap: 12px; }
+.ca-carte { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; background: #fff; border: 1px solid #EEF2F7; border-radius: 14px; padding: 16px 20px; }
+.ca-emp { font-size: 15px; font-weight: 700; color: #1F2937; }
+.ca-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin: 6px 0; font-size: 13px; color: #6B7280; }
+.ca-meta span { display: inline-flex; align-items: center; gap: 5px; }
+.ca-type { background: #EEF2FF; color: #4F46E5; padding: 3px 10px; border-radius: 999px; font-weight: 600; }
+.ca-motif { font-size: 14px; color: #374151; font-style: italic; }
+.ca-refus { font-size: 13px; color: #DC2626; margin-top: 6px; }
+.ca-droite { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; flex-shrink: 0; }
+.ca-badge { padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.ca-badge.ca-attente { background: #FEF3C7; color: #D97706; }
+.ca-badge.ca-validee { background: #DCFCE7; color: #16A34A; }
+.ca-badge.ca-refusee { background: #FEE2E2; color: #DC2626; }
+.ca-actions { display: flex; gap: 8px; }
+.ca-btn-valider { display: inline-flex; align-items: center; gap: 5px; border: none; background: #16A34A; color: #fff; border-radius: 8px; padding: 7px 12px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.ca-btn-refuser { display: inline-flex; align-items: center; gap: 5px; border: none; background: #FEE2E2; color: #DC2626; border-radius: 8px; padding: 7px 12px; font-size: 13px; font-weight: 600; cursor: pointer; }

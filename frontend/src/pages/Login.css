@@ -1,0 +1,75 @@
+.login-container { display: flex; height: 100vh; overflow: hidden; }
+
+/* ---- Panneau promo (gauche) ---- */
+.login-promo {
+  flex: 1;
+  background: linear-gradient(160deg, #2563EB 0%, #1E3A8A 100%);
+  color: #fff; padding: 40px;
+  display: flex; flex-direction: column;
+}
+.login-logo {
+  width: 46px; height: 46px; background: rgba(255,255,255,0.15);
+  border-radius: 10px; display: flex; align-items: center; justify-content: center;
+  font-weight: 700; letter-spacing: 1px;
+}
+.login-promo-text h1 { font-size: 34px; font-weight: 700; line-height: 1.25; }
+.login-promo-text p { font-size: 15px; opacity: .85; margin-top: 16px; max-width: 440px; line-height: 1.6; }
+.login-illu { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; margin-top: 20px; }
+.login-illu img { max-height: 100%; max-width: 100%; width: auto; object-fit: contain; }
+.login-copyright { font-size: 12px; opacity: .7; }
+
+.login-promo-bottom { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; }
+
+/* ---- Panneau formulaire (droite) ---- */
+.login-form-panel {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  padding: 40px; background: #fff; overflow-y: auto;
+}
+.login-form { width: 100%; max-width: 380px; }
+.login-form h2 { font-size: 28px; color: #1F2937; }
+.login-sub { font-size: 14px; color: #6B7280; margin: 6px 0 26px; }
+
+.login-form label { display: block; font-size: 13px; font-weight: 600; color: #374151; margin-bottom: 6px; }
+.login-form input[type="text"], .login-form input[type="password"] {
+  width: 100%; padding: 12px 14px; border: 1px solid #E5E7EB; border-radius: 10px;
+  font-size: 14px; background: #F9FAFB; outline: none; transition: border-color .15s, box-shadow .15s;
+}
+.login-form input[type="text"]:focus, .login-form input[type="password"]:focus {
+  border-color: #2563EB; box-shadow: 0 0 0 3px rgba(37,99,235,.15); background: #fff;
+}
+.login-label-row { display: flex; justify-content: space-between; align-items: center; margin-top: 18px; }
+.login-link { font-size: 12px; color: #2563EB; text-decoration: none; }
+.login-link:hover { text-decoration: underline; }
+
+.login-pwd { position: relative; }
+.login-pwd input { padding-right: 42px; }
+.login-pwd button {
+  position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+  border: none; background: transparent; cursor: pointer; font-size: 16px; padding: 6px;
+}
+.login-remember { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #6B7280; font-weight: 400; margin-top: 16px; }
+.login-remember input { width: auto; }
+
+.login-submit {
+  width: 100%; margin-top: 22px; padding: 13px; background: #2563EB; color: #fff;
+  border: none; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; transition: background .15s;
+}
+.login-submit:hover { background: #1D4ED8; }
+.login-submit:disabled { opacity: .6; cursor: not-allowed; }
+
+.login-divider { display: flex; align-items: center; gap: 12px; margin: 24px 0; }
+.login-divider::before, .login-divider::after { content: ""; flex: 1; height: 1px; background: #E5E7EB; }
+.login-divider span { font-size: 12px; color: #9CA3AF; }
+
+.login-candidat { text-align: center; font-size: 14px; color: #6B7280; }
+.login-link-bold { color: #2563EB; font-weight: 600; text-decoration: none; }
+.login-link-bold:hover { text-decoration: underline; }
+
+.login-footer { display: flex; justify-content: center; gap: 16px; margin-top: 34px; }
+.login-footer a { font-size: 12px; color: #9CA3AF; text-decoration: none; }
+.login-footer a:hover { color: #6B7280; }
+
+.login-error { background: #FEE2E2; color: #DC2626; padding: 10px 12px; border-radius: 8px; font-size: 13px; margin-bottom: 14px; }
+
+/* ---- Responsive : masque la promo sur mobile ---- */
+@media (max-width: 860px) { .login-promo { display: none; } }

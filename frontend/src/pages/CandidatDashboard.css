@@ -1,0 +1,45 @@
+.cdash-page { min-height: 100vh; background: #F3F4F6; }
+.cdash-topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 32px; background: #fff; border-bottom: 1px solid #E5E7EB; position: sticky; top: 0; z-index: 10;
+}
+.cdash-logo { font-weight: 800; color: #2563EB; font-size: 18px; cursor: pointer; }
+.cdash-logo span { color: #9CA3AF; font-weight: 600; }
+.cdash-user { display: flex; align-items: center; gap: 16px; }
+.cdash-user > span { font-size: 14px; font-weight: 600; color: #374151; }
+.cdash-logout {
+  display: inline-flex; align-items: center; gap: 6px; background: #fff; border: 1px solid #E5E7EB;
+  border-radius: 10px; padding: 8px 14px; font-size: 13px; color: #374151; cursor: pointer;
+}
+.cdash-logout:hover { border-color: #DC2626; color: #DC2626; }
+
+.cdash-main { max-width: 900px; margin: 0 auto; padding: 32px 20px; }
+.cdash-tete { display: flex; align-items: center; justify-content: space-between; }
+.cdash-tete h1 { font-size: 24px; font-weight: 800; color: #1F2937; }
+.cdash-tete p { color: #6B7280; font-size: 14px; margin-top: 4px; }
+.cdash-btn {
+  display: inline-flex; align-items: center; gap: 6px; background: #2563EB; color: #fff; border: none;
+  border-radius: 10px; padding: 10px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.cdash-section { font-size: 16px; font-weight: 700; color: #1F2937; margin: 28px 0 14px; }
+
+.cdash-liste { display: flex; flex-direction: column; gap: 12px; }
+.cdash-carte {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  background: #fff; border: 1px solid #EEF2F7; border-radius: 12px; padding: 16px 20px;
+}
+.cdash-carte-info { display: flex; align-items: center; gap: 12px; }
+.cdash-icone {
+  width: 40px; height: 40px; border-radius: 10px; background: #EFF6FF; color: #2563EB;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.cdash-carte h3 { font-size: 15px; font-weight: 700; color: #1F2937; }
+.cdash-carte span { font-size: 12px; color: #9CA3AF; }
+.cdash-vide {
+  text-align: center; color: #9CA3AF; padding: 50px 20px; display: flex; flex-direction: column;
+  align-items: center; gap: 12px; background: #fff; border: 1px dashed #E5E7EB; border-radius: 14px;
+}
+.cdash-badge { padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.cdash-badge.st-recue { background: #DBEAFE; color: #2563EB; }
+.cdash-badge.st-retenue { background: #DCFCE7; color: #16A34A; }
+.cdash-badge.st-refusee { background: #FEE2E2; color: #DC2626; }
